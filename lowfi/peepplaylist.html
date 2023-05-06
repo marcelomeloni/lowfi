@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="playlists.css">
+    <link rel="shortcut icon" href="music.png">
+    <title>lowfi</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-lateral">
+            <nav>
+                <a class="logo" href="lowfi.html"><div class="logo-image"><img alt="logo" width="50px" height="50px" src="music.png"></div>Lowfi.</a>
+                <a class="textmenu menu-text" href="lowfi.html"><i class="fa-solid fa-house"></i>Inicio</a>
+                <a class="textmenu menu-text" href="#"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+                <a class="textmenu menu-text" href="biblioteca.html"><i class="fa-solid fa-book"></i>Sua Bibilioteca</a>
+            </nav>
+            <hr class="separator">
+            <div class="playlist-container">
+                <a class="textmenu playlist-item" href="peepplaylist.html">Lill Peep</a>
+                <a class="textmenu playlist-item" href="funk.html">Funk</a>
+                <a class="textmenu playlist-item" href="trap.html">Trap</a>
+              
+
+                <!-- Adicione mais playlists aqui -->
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="main-menu">
+            <div class="pageplaylist">
+               <div class="desc">
+                <img src="lilpeep.webp">
+                <div class="playlisttexts">
+                <a class="playlistname">LilPeep</a>
+                <a class="description">Playlist feita em homenagem ao peep.</a>
+            </div>
+            
+               </div>
+               <div class="musics-menu">
+                <nav class="hits-list">
+                    <a class="musica">Beamer Boy<img class="play-button" width="30px" height="30px" src="redbutton.png" alt="Play" onclick="playMusic('Beamer Boy')"></a>
+                    <a class="musica">Star Shopping <img class="play-button" width="30px" height="30px" src="redbutton.png" alt="Play" onclick="playMusic('Star Shopping')"></a>
+                    <a class="musica">Big City Blues<img class="play-button" width="30px" height="30px" src="redbutton.png" alt="Play" onclick="playMusic('Big City Blues')"></a>
+                    
+                </nav>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="player-display">
+                <img class="current-track-image" src="0d0d0d.png" alt="Imagem da música">
+                <a class="nomemusica"><span class="player-current-track"></span></a>
+            </div>
+            <div class="pause-play">
+                <i class="fa fa-pause fa-solid fa-circle-pause"></i>
+                <i class="fa fa-play fa-solid fa-circle-play"></i>
+            </div>
+            <div class="player-controls">
+                <div class="progress-bar-wrapper">
+                    <input type="range" class="progress-slider" min="0" max="100" step="1" value="0" onchange="changeProgress(this.value)">
+                        <div class="progress"></div> 
+                </div>
+                <div class="volume-wrapper">
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" onchange="changeVolume(this.value)">
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

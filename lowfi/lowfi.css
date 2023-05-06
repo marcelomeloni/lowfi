@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+    filter: drop-shadow(0 5px 4px rgba(51, 204, 255, 0.3));
+    align-items: center;
+    font-family: 'Sigmar', cursive;
+}
+.hits-list .play-button {
+    margin-left: auto;
+  }
+
+.playlists{
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-around;
+}
+.playlist1{
+    padding: 50px;
+    cursor: pointer;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 6px 10px rgba(0,0,0,0.9);
+    text-align: center;
+    background-color: #555;
+    
+}
+.playlist1 img{
+    width: 200px;
+    height: 200px;
+    
+}
+.playlist1 a{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+.playlist-container {
+    padding-top: 0px;
+    overflow-x: hidden;
+    padding-left: 10px;
+    max-height: calc(100vh - 200px); /* Defina a altura máxima desejada, subtraindo a altura do player e do menu */
+    overflow-y: auto;
+}
+.playlist-container::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+.playlist-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da track */
+}
+
+.playlist-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do thumb (alça) */
+}
+
+.playlist-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb ao passar o mouse */
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+.player-display {
+    display: flex;
+    align-items: center;
+  }
+  
+  .current-track-container {
+    display: flex;
+    align-items: center;
+    
+    margin-right: 20px;
+  }
+  .nomemusica{
+    padding-left: 20px;
+  }
+  
+  .current-track-image {
+    width: 70px;
+    height: 70px;
+    padding-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .current-track-name {
+    color: white;
+    
+    font-size: 16px;
+  }
+  
+
+
+.player {
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding:10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-volume-up{
+    color: white;
+    transform: scale(0.5);
+}
+
+.volume-wrapper {
+    align-items: center;
+    margin-right: 200px;
+    padding-left: 50px;
+    display: flex;
+    
+
+}
+
+.volume-control {
+    width: 30px;
+    
+}
+.volume-slider {
+    background-color: green; /* Altere a cor aqui */
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #ccc;
+}
+
+.player i{
+    font-size: 34px;
+    color: white;
+    margin: 0 10px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px auto;
+    width: 80%; /* ou qualquer largura desejada */
+}
+
+.playlist-item {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.playlist-item:hover {
+    transform: scale(1.1);
+}
+
+.logo img {
+    margin-right: 5px;
+    filter: drop-shadow(0 5px 4px rgba(51, 204, 255, 0.3));
+}
+.menu-text i{
+    padding-right: 10px; 
+}
+
+.textmenu {
+    text-decoration: none;
+    color: #33ccff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+   
+   
+    font-weight: 600;
+}
+.menu-text:hover{
+    color: yellow; 
+
+   
+    padding-left: 5px; 
+
+}
+.textmenu:hover i {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menu-lateral {
+    background-color: rgb(30, 30, 30);
+    width: 200px;
+    height: 90vh;
+}
+
+.menu-lateral nav {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-menu h1{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.main-menu {
+    padding: 20px;
+    flex: 0 0 auto;
+    overflow-y: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    
+}
+.hits-list{
+    display: flex;
+    background-color: #9f9f9f;
+    padding: 20px;
+   height: 62vh;
+   
+    width: 80vh;
+    border-radius: 10px;
+    flex-direction: column;
+  
+    
+}
+.musics-menu{
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    background-color: white;
+  
+}
+.hits-list a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.play-button {
+   
+    margin-left: 50vh;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  .musica {
+    display: flex;
+    align-items: center;
+  }
